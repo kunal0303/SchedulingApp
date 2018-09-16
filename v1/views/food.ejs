@@ -1,0 +1,6 @@
+<% include partials/header %>
+  <h1>Food Page</h1>  
+    <% data["restaurants"].forEach(function(restaurant){%>
+       <li> <%= restaurant["restaurant"]["name"] %> - <%= restaurant["restaurant"]["location"]["locality_verbose"] %> </li>
+   <% }) %>
+<% include partials/footer %>
